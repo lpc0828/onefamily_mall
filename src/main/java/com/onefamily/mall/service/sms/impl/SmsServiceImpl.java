@@ -72,10 +72,10 @@ public class SmsServiceImpl implements ISmsService {
                     String codeKey = genVerifyCodeKey(moduleCode, mobile);
                     verifyCode = jedis.get(codeKey);
                     if (StringUtils.isNotBlank(verifyCode)) {
-                        resultVO.format(true, String.format("验证码发送成功! %s", verifyCode)); break;
+                        resultVO.format(true, String.format("验证码发送成功! %s", verifyCode), verifyCode); break;
                     }
 
-                    verifyCode = Integer.toHexString(RandomUtils.nextInt(0x1000, 0xffff));
+                    verifyCode = String.valueOf(RandomUtils.nextInt(100000, 999999));
                     jedis.set(codeKey, verifyCode);
                     jedis.expire(codeKey, DefaultVerifyCodeExpireSeconds);
                     if (limitSendInterval < 0) {
@@ -91,7 +91,7 @@ public class SmsServiceImpl implements ISmsService {
                     RedisPool.returnResource(jedis);
                 }
             }
-            resultVO.format(true, String.format("验证码发送成功! %s", verifyCode)); break;
+            resultVO.format(true, String.format("验证码发送成功! %s", verifyCode), verifyCode); break;
         } while (false);
         return resultVO;
     }
