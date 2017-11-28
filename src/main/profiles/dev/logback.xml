@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration debug="true" scan="true" scanPeriod="5 seconds">
+    <contextName>${HOSTNAME}</contextName>
+
+    <property name="prjname" value="mall" />
+    <property name="log.dir" value="${catalina.base}/logs" />
+    <property name="encoding" value="UTF-8" />
+
+    <property name="normal-pattern" value="%-5level|[%X{ipAddr}]|[%thread]|[%X{trackID}]|%d{yy-MM-dd.HH:mm:ss}|%logger{40}.%M:%L | %msg%n" />
+    <property name="console-pattern" value="%-5level|[%X{ipAddr}]|[%thread]|[%X{trackID}]|%d{yy-MM-dd.HH:mm:ss}|%-40.40logger{0}|%msg%n" />
+    <property name="plain-pattern" value="%.-5level|%d{yy-MM-dd.HH:mm:ss}|%msg%n" />
+
+    <appender name="${prjname}_busi" class="ch.qos.logback.classic.sift.SiftingAppender">
+        <discriminator>
+            <key>busi</key>
+            <defaultValue>default</defaultValue>
+        </discriminator>
+        <sift>
+            <appender name="${prjname}_${busi}" class="ch.qos.logback.core.rolling.RollingFileAppender">
+                <prudent>false</prudent>
+                <Append>true</Append>
+                <encoder>
+                    <pattern>${normal-pattern}</pattern>
+                    <charset>${encoding}</charset>
+                </encoder>
+                <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+                    <fileNamePattern>${log.dir}/${prjname}_${busi}.%d{yyyy-MM-dd}.log
+                    </fileNamePattern>
+                    <maxHistory>30</maxHistory>
+                </rollingPolicy>
+            </appender>
+        </sift>
+    </appender>
+
+    <appender name="${prjname}_error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <prudent>true</prudent>
+        <Append>true</Append>
+        <encoder>
+            <pattern>${normal-pattern}</pattern>
+            <charset>${encoding}</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/${prjname}_error.%d{yyyy-MM-dd}.log
+            </fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${normal-pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- logger 配置 -->
+    <logger name="org.springframework.beans" level="WARN" addtivity="false">
+        <appender-ref ref="console" />
+    </logger>
+    <logger name="org.springframework.test" level="WARN" addtivity="false">
+        <appender-ref ref="console" />
+    </logger>
+
+    <logger name="com.onefamily" level="DEBUG" additivity="false">
+        <appender-ref ref="${prjname}_busi" />
+        <appender-ref ref="console" />
+    </logger>
+
+    <root level="WARN">
+        <appender-ref ref="console" />
+        <appender-ref ref="${prjname}_error" />
+    </root>
+
+</configuration>
