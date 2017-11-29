@@ -19,7 +19,6 @@ import static com.onefamily.platform.utils.StringTool.isNotEmpty;
 /**
  * SQL UPDATE 更新
  *
- * @Author 杨健/YangJian
  * @Date 2015年7月21日 上午10:15:32
  */
 public class Update {
@@ -79,7 +78,7 @@ public class Update {
 	 * 
 	 *            字段集合，前提是new Update(Object obj)
 	 * @return Update
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年11月26日 下午4:15:47
 	 * @Version 1.0.0
 	 */
@@ -114,7 +113,7 @@ public class Update {
 	 * @param value
 	 *            值
 	 * @return Update
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:29:23
 	 * @Version 1.0.0
 	 */
@@ -137,7 +136,7 @@ public class Update {
 	 * @param value
 	 *            参数值
 	 * @return Update
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年6月30日 上午11:46:48
 	 * @Version 1.0.0
 	 */
@@ -173,7 +172,7 @@ public class Update {
 	 * @param columnName
 	 * @param value
 	 * @return Update
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年7月19日 下午2:52:52
 	 * @Version 1.0.0
 	 */
@@ -418,7 +417,7 @@ public class Update {
 	 * 拼接SET及WHERE条件
 	 * 
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:27:39
 	 * @Version 1.0.0
 	 */
@@ -470,7 +469,7 @@ public class Update {
 	 *            数据库连接
 	 * @throws SQLException
 	 * @return int 影响条数
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:28:36
 	 * @Version 1.0.0
 	 */

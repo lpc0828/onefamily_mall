@@ -22,7 +22,7 @@ import java.util.*;
 /**
  * SQL SELECT查询器
  *
- * @Author 杨健/YangJian
+ *
  * @Date 2015年7月16日 下午3:21:32
  */
 public class Query {
@@ -43,7 +43,7 @@ public class Query {
 	 * @param isDubeg
 	 *            true 是
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:04:02
 	 * @Version 1.0.0
 	 */
@@ -111,7 +111,7 @@ public class Query {
 	 * @param table
 	 *            表名
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:05:58
 	 * @Version 1.0.0
 	 */
@@ -127,7 +127,7 @@ public class Query {
 	 * @param columnNames
 	 *            字段数组
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:06:44
 	 * @Version 1.0.0
 	 */
@@ -147,7 +147,7 @@ public class Query {
 	 *            sql片段
 	 * @return
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年7月16日 上午10:52:11
 	 * @Version 1.0.0
 	 */
@@ -171,7 +171,7 @@ public class Query {
 	 * 参数集合
 	 * 
 	 * @return List<Object>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:09:00
 	 * @Version 1.0.0
 	 */
@@ -184,7 +184,7 @@ public class Query {
 	 * 
 	 * @param parameter
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:10:41
 	 * @Version 1.0.0
 	 */
@@ -211,7 +211,7 @@ public class Query {
 	 * @param value
 	 *            参数值
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年6月30日 上午11:46:48
 	 * @Version 1.0.0
 	 */
@@ -241,7 +241,7 @@ public class Query {
 	 * @param columnName
 	 * @param value
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年7月15日 下午5:22:49
 	 * @Version 1.0.0
 	 */
@@ -414,7 +414,7 @@ public class Query {
 	 * @param lo
 	 * @param go
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:11:30
 	 * @Version 1.0.0
 	 */
@@ -535,7 +535,7 @@ public class Query {
 	 * 
 	 * @param order
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年7月28日 下午3:41:43
 	 * @Version 1.0.0
 	 */
@@ -555,7 +555,7 @@ public class Query {
 	 * @param limit
 	 *            条数
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:12:09
 	 * @Version 1.0.0
 	 */
@@ -570,7 +570,7 @@ public class Query {
 	 * @param limit
 	 *            条数
 	 * @return Query
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月7日 下午4:44:30
 	 * @Version 1.0.0
 	 */
@@ -618,7 +618,7 @@ public class Query {
 	 * 
 	 * @param clazz
 	 * @return BeanHandler<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:13:09
 	 * @Version 1.0.0
 	 */
@@ -633,7 +633,7 @@ public class Query {
 	 * 
 	 * @param clazz
 	 * @return BeanListHandler<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:14:23
 	 * @Version 1.0.0
 	 */
@@ -648,7 +648,7 @@ public class Query {
 	 * 
 	 * @throws SQLException
 	 * @return Long
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:14:55
 	 * @Version 1.0.0
 	 */
@@ -674,7 +674,7 @@ public class Query {
 	 *            指定字段
 	 * @throws SQLException
 	 * @return T
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:16:27
 	 * @Version 1.0.0
 	 */
@@ -692,7 +692,7 @@ public class Query {
 	 * 
 	 * @throws SQLException
 	 * @return Map<String,Object>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:17:50
 	 * @Version 1.0.0
 	 */
@@ -711,7 +711,7 @@ public class Query {
 	 * 
 	 * @throws SQLException
 	 * @return List<Map<String,Object>>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:18:15
 	 * @Version 1.0.0
 	 */
@@ -731,7 +731,7 @@ public class Query {
 	 * @param column
 	 * @throws SQLException
 	 * @return List<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2016年9月9日 下午3:59:42
 	 * @Version 1.0.0
 	 */
@@ -753,7 +753,7 @@ public class Query {
 	 * 
 	 * @throws SQLException
 	 * @return T
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:24:08
 	 * @Version 1.0.0
 	 */
@@ -778,7 +778,7 @@ public class Query {
 	 * 
 	 * @throws SQLException
 	 * @return List<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:24:37
 	 * @Version 1.0.0
 	 */
@@ -808,7 +808,7 @@ public class Query {
 	 *            指定封装对象
 	 * @throws SQLException
 	 * @return T
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:25:13
 	 * @Version 1.0.0
 	 */
@@ -829,7 +829,7 @@ public class Query {
 	 *            指定封装对象
 	 * @throws SQLException
 	 * @return List<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:25:48
 	 * @Version 1.0.0
 	 */
@@ -854,7 +854,7 @@ public class Query {
 	 *            指定字段
 	 * @throws SQLException
 	 * @return List<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:26:26
 	 * @Version 1.0.0
 	 */
@@ -875,7 +875,7 @@ public class Query {
 	 *
 	 * @throws SQLException
 	 * @return int
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年11月26日 下午7:05:38
 	 * @Version 1.0.0
 	 */
@@ -898,7 +898,7 @@ public class Query {
 	 * 
 	 * @param result
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:27:08
 	 * @Version 1.0.0
 	 */

@@ -1,12 +1,8 @@
 package com.onefamily.platform.exception;
 
-//import javax.ejb.ApplicationException;
-
 /**
  * Base Exception class that can be thrown by the business layer.
- * 
  * 业务异常基类。必须要捕获。
- * 
  * 
  */
 @SuppressWarnings("serial")

@@ -1,4 +1,4 @@
-package com.onefamily.common;
+package com.onefamily.common.redis;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.configuration.PropertiesConfiguration;
@@ -40,7 +40,6 @@ public class RedisPool {
     static {
         try {
             PropertiesConfiguration config = new PropertiesConfiguration("redis2s.properties");
-            //config.setThrowExceptionOnMissing(false);
             String radisstr = config.getString("redis.server.list", "");
             String serverlist = config.getString("SERVER_LIST", "");
             REDIS_SVR_LIST = (StringUtils.isNotBlank(serverlist)) ? serverlist : radisstr;

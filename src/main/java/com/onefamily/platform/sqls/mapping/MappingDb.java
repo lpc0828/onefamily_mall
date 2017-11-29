@@ -110,7 +110,7 @@ public class MappingDb {
      * 将对象属性转换对应的数据库字段
      *
      * @return List<String>
-     * @Author 杨健/YangJian
+     *
      * @Date 2015年5月7日 上午11:48:07
      * @Version 1.0.0
      */
@@ -133,7 +133,7 @@ public class MappingDb {
      * 获取数据库表名
      *
      * @return String
-     * @Author 杨健/YangJian
+     *
      * @Date 2015年10月16日 上午11:03:46
      * @Version 1.0.0
      */
@@ -191,7 +191,7 @@ public class MappingDb {
      * 获取主键字段名
      *
      * @return String
-     * @Author 杨健/YangJian
+     *
      * @Date 2015年12月3日 下午8:17:47
      * @Version 1.0.0
      */
@@ -219,7 +219,7 @@ public class MappingDb {
      * 获取主键值
      *
      * @return Object
-     * @Author 杨健/YangJian
+     *
      * @Date 2015年12月3日 下午8:19:58
      * @Version 1.0.0
      */
@@ -248,7 +248,7 @@ public class MappingDb {
      *
      * @param column
      * @return Object
-     * @Author 杨健/YangJian
+     *
      * @Date 2015年12月3日 下午8:20:13
      * @Version 1.0.0
      */
@@ -276,7 +276,7 @@ public class MappingDb {
      * 获取所有值
      *
      * @return Object[]
-     * @Author 杨健/YangJian
+     *
      * @Date 2015年12月3日 下午8:20:51
      * @Version 1.0.0
      */

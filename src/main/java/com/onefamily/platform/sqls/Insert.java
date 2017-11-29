@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 
  * @Comment SQL INSERT
- * @Author 杨健/YangJian
+ *
  * @Date 2015年7月2日 下午2:32:08
  * @Version 1.0.0
  */
@@ -121,7 +121,7 @@ public class Insert {
 	 * 
 	 * @param seqBefore
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年7月21日 上午11:38:17
 	 * @Version 1.0.0
 	 */
@@ -142,7 +142,7 @@ public class Insert {
 	 * 
 	 * @param segment
 	 * @return Insert
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:37:30
 	 * @Version 1.0.0
 	 */
@@ -161,7 +161,7 @@ public class Insert {
 	 * 
 	 * @param columns
 	 * @return Insert
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:38:05
 	 * @Version 1.0.0
 	 */
@@ -175,7 +175,7 @@ public class Insert {
 	 * 
 	 * @param values
 	 * @return Insert
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:38:44
 	 * @Version 1.0.0
 	 */
@@ -198,7 +198,7 @@ public class Insert {
 	 * @param isPrepareStatement
 	 *            是否使用占位符
 	 * @return String SQL
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:39:34
 	 * @Version 1.0.0
 	 */
@@ -216,7 +216,7 @@ public class Insert {
 	 * 带占位符SQL
 	 * 
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:40:26
 	 * @Version 1.0.0
 	 */
@@ -256,7 +256,7 @@ public class Insert {
 	 * 带值SQL
 	 * 
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:40:39
 	 * @Version 1.0.0
 	 */
@@ -282,7 +282,7 @@ public class Insert {
 	 * 获取字段集合
 	 * 
 	 * @return Object[]
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:41:03
 	 * @Version 1.0.0
 	 */
@@ -298,7 +298,7 @@ public class Insert {
 	 * 获取值集合
 	 * 
 	 * @return Object[]
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:41:19
 	 * @Version 1.0.0
 	 */
@@ -354,7 +354,7 @@ public class Insert {
 	 * @param connection
 	 * @throws SQLException
 	 * @return List<Long> 默认返回ID
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:43:19
 	 * @Version 1.0.0
 	 */
@@ -372,7 +372,7 @@ public class Insert {
 	 *            指定字段集合
 	 * @throws SQLException
 	 * @return List<T>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:44:31
 	 * @Version 1.0.0
 	 */
@@ -392,7 +392,7 @@ public class Insert {
 	 *            参数
 	 * @throws SQLException
 	 * @return List<Long>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:46:26
 	 * @Version 1.0.0
 	 */
@@ -409,7 +409,7 @@ public class Insert {
 	 * @return
 	 * @throws SQLException
 	 * @return List<Long>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:49:37
 	 * @Version 1.0.0
 	 */
@@ -426,7 +426,7 @@ public class Insert {
 	 * @return
 	 * @throws SQLException
 	 * @return List<Long>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:49:37
 	 * @Version 1.0.0
 	 */
@@ -444,7 +444,7 @@ public class Insert {
 	 * @param values
 	 * @throws SQLException
 	 * @return List<Long>
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:50:13
 	 * @Version 1.0.0
 	 */
@@ -468,7 +468,7 @@ public class Insert {
 	 * @param isDubeg
 	 *            true 打印
 	 * @return void
-	 * @Author 杨健/YangJian
+	 *
 	 * @Date 2015年8月6日 上午11:50:25
 	 * @Version 1.0.0
 	 */
