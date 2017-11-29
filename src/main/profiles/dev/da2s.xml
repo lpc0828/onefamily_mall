@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<da2s-configuration>
+	<DefaultConnectionPool>3000</DefaultConnectionPool>
+	<connectionPool name="3000">
+		<dbtype>POSTGRESQL</dbtype>
+		<driverClassName>org.postgresql.Driver</driverClassName>
+		<url>jdbc:postgresql://47.94.208.21:5432/mall_db</url>
+		<username>onefamily</username>
+		<password>onefamily</password>
+		<datasourceProperty>
+			<defaultAutoCommit>false</defaultAutoCommit>
+			<initialSize>2</initialSize>
+			<maxActive>32</maxActive>
+			<maxIdle>16</maxIdle>
+			<minIdle>5</minIdle>
+			<maxWait>3000</maxWait>
+			<validationQuery>select 1</validationQuery>
+			<testOnBorrow>true</testOnBorrow>
+			<removeAbandoned>true</removeAbandoned>
+			<removeAbandonedTimeout>180</removeAbandonedTimeout>
+			<logAbandoned>true</logAbandoned>
+		</datasourceProperty>
+	</connectionPool>
+	<connectionPool name="5000">
+		<dbtype>POSTGRESQL</dbtype>
+		<driverClassName>org.postgresql.Driver</driverClassName>
+		<url>jdbc:postgresql://47.94.208.21:5432/mall_db</url>
+		<username>onefamily</username>
+		<password>onefamily</password>
+		<datasourceProperty>
+			<defaultAutoCommit>false</defaultAutoCommit>
+			<initialSize>2</initialSize>
+			<maxActive>32</maxActive>
+			<maxIdle>16</maxIdle>
+			<minIdle>8</minIdle>
+			<maxWait>3000</maxWait>
+			<validationQuery>select 1</validationQuery>
+			<testOnBorrow>true</testOnBorrow>
+			<removeAbandoned>true</removeAbandoned>
+			<removeAbandonedTimeout>180</removeAbandonedTimeout>
+			<logAbandoned>true</logAbandoned>
+		</datasourceProperty>
+	</connectionPool>
+
+</da2s-configuration>
+
+

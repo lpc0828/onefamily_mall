@@ -39,8 +39,6 @@ public class DSMonitor {
 				long connAvgQtyPerSec = item.time > 0L ? Long.valueOf(item.count / item.time) : 0L;
 				ret.put(name.replaceAll(" ", "_") + "_Count", new Long(connAvgQtyPerSec));
 			}
-			//System.err.println("DUMP:" + ret);
-
 			currentItems = Collections.unmodifiableMap(ret);
 		}
 	}
