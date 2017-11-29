@@ -1,4 +1,4 @@
-package com.onefamily.platform;
+package com.onefamily.platform.utils;
 
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;

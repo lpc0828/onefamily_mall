@@ -26,7 +26,7 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <bean class="com.onefamily.platform.LogInterceptor" />
+            <bean class="com.onefamily.platform.interceptors.LogInterceptor" />
         </mvc:interceptor>
     </mvc:interceptors>
 

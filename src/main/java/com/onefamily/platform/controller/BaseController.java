@@ -1,5 +1,6 @@
-package com.onefamily.platform;
+package com.onefamily.platform.controller;
 
+import com.onefamily.platform.dataformat.JsonWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RestController;

@@ -4,7 +4,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.onefamily.common.RedisPool;
 import com.onefamily.mall.service.sms.ISmsService;
-import com.onefamily.platform.ResultVO;
+import com.onefamily.platform.dataformat.ResultVO;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
 package com.onefamily.ucenter.controller;
 
 import com.onefamily.mall.service.sms.ISmsService;
-import com.onefamily.platform.BaseController;
-import com.onefamily.platform.JsonWrapper;
-import com.onefamily.platform.ResultVO;
+import com.onefamily.platform.controller.BaseController;
+import com.onefamily.platform.dataformat.JsonWrapper;
+import com.onefamily.platform.dataformat.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -51,4 +51,5 @@ public class VerifyCodeController extends BaseController {
 
         return jsonWrapper;
     }
+
 }

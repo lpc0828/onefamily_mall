@@ -1,4 +1,4 @@
-package com.onefamily.platform;
+package com.onefamily.platform.dataformat;
 
 import java.io.Serializable;
 

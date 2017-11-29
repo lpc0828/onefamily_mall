@@ -1,7 +1,7 @@
 package com.onefamily.mall.service.sms;
 
 
-import com.onefamily.platform.ResultVO;
+import com.onefamily.platform.dataformat.ResultVO;
 
 public interface ISmsService {
 

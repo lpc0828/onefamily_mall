@@ -1,4 +1,4 @@
-package com.onefamily.platform;
+package com.onefamily.platform.dataformat;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonParseException;

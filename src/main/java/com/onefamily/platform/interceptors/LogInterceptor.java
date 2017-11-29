@@ -1,5 +1,6 @@
-package com.onefamily.platform;
+package com.onefamily.platform.interceptors;
 
+import com.onefamily.platform.utils.WebUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
