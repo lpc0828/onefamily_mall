@@ -15,7 +15,7 @@ public class User implements Serializable {
     @Column(sequence = "seq_t_user_id", isPrimaryKey = true)
     private Long id;
     private String nickName;
-    private String headimgurl;
+    private String headimgurl = "http://www.toysandco.com/media/products/large/HEE3500-L.jpg";
     private Integer sex = SexEnum.UNKNOWN.getValue();
     private String mobile;
     private Integer certificationYn = YesNoEnum.NO.getCode();
