@@ -120,16 +120,17 @@ public class SmsServiceImpl implements ISmsService {
                 if (jedis != null) {
                     cacheVerifyCode = jedis.get(codeKey);
                 }
+                if (StringUtils.isBlank(cacheVerifyCode)) {
+                    resultVO.format(false, "验证码已过期,请重新获取!"); break;
+                }
+                if (!StringUtils.equalsIgnoreCase(verifyCode, cacheVerifyCode)) {
+                    resultVO.format(false, "验证码不正确,请重新输入!"); break;
+                }
+                jedis.del(codeKey);
             } finally{
                 if (jedis != null) {
                     RedisPool.returnResource(jedis);
                 }
-            }
-            if (StringUtils.isBlank(cacheVerifyCode)) {
-                resultVO.format(false, "验证码已过期,请重新获取!"); break;
-            }
-            if (!StringUtils.equalsIgnoreCase(verifyCode, cacheVerifyCode)) {
-                resultVO.format(false, "验证码不正确,请重新输入!"); break;
             }
             resultVO.format(true, "验证通过!"); break;
         } while (false);

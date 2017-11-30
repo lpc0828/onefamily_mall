@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 
-@RestController
 public class BaseController {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());

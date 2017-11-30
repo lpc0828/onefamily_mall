@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
-@RequestMapping("verifyCode")
+@RequestMapping("uc/verifyCode")
 @Controller
 public class VerifyCodeController extends BaseController {
 
-    private final String ModuleCode = "ucenter";
+    public static final String ModuleCode = "ucenter";
     @Autowired
     private ISmsService smsService;
 
@@ -51,5 +51,4 @@ public class VerifyCodeController extends BaseController {
 
         return jsonWrapper;
     }
-
 }

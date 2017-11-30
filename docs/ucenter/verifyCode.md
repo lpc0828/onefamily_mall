@@ -9,7 +9,7 @@
   
   - 调用示例
   ```
-      curl -d'mobile=18600249476&trackId=3fb79a6618701bfb67b9e2fdec54a224' 'http://deverp.daling.com:8080/mall/verifyCode/sendCode.do'
+      curl -d'mobile=18600249476&trackId=3fb79a6618701bfb67b9e2fdec54a224' 'http://deverp.daling.com:8080/mall/uc/verifyCode/sendCode.do'
       // 请求 Method: Get / Post
       // 请求参数:
           // mobile 用户手机号;
@@ -34,7 +34,7 @@
   
   - 调用示例
   ```
-      curl -d'mobile=18600249476&verifyCode=281057&trackId=3fb79a6618701bfb67b9e2fdec54a224' 'http://deverp.daling.com:8080/mall/verifyCode/verifyCode.do'
+      curl -d'mobile=18600249476&verifyCode=281057&trackId=3fb79a6618701bfb67b9e2fdec54a224' 'http://deverp.daling.com:8080/mall/uc/verifyCode/verifyCode.do'
       // 请求 Method: Get / Post
       // 请求参数:
           // mobile 用户手机号;
@@ -56,5 +56,56 @@
       // 首先应关注status 当为0时代表处理成功; 当status不为0,调用方应关注errorMsg信息
   ```  
   
+**短信注册接口**
   
+  - 调用示例
+  ```
+    curl -H'platform:android' -d'mobile=18600249476&verifyCode=293580&trackId=3fb79a6618701bfb67b9e2fdec54a224' 'http://deverp.daling.com:8080/mall/uc/login/smsRegister.do'
+  ```
+  
+  - 返回结果
+  ```
+      {
+          "version": "1.0",
+          "timestamp": "171130 193832.996",
+          "status": 0,
+          "errorMsg": "用户创建成功",
+          "elapsed": 351,
+          "trackId": "3fb79a6618701bfb67b9e2fdec54a224",
+          "data": {
+              "uid": 10001,
+              "nickName": "18600249476",
+              "headimgurl": null,
+              "utoken": "127011-8368-ddfb0382-d8e1-4216-b3e9-6f25aa930302",
+              "ctime": 1512041913265,
+              "certYn": "N"
+          }
+      }
+  ```
+  
+**短信登录接口**
 
+  - 调用示例
+  ```
+    curl -H'platform:android' -d'mobile=18600249476&verifyCode=735055&trackId=3fb79a6618701bfb67b9e2fdec54a224' 'http://deverp.daling.com:8080/mall/uc/login/smsLogin.do'
+  ```  
+  
+  - 返回结果
+  ```
+    {
+        "version": "1.0",
+        "timestamp": "171130 194025.758",
+        "status": 0,
+        "errorMsg": "查询成功",
+        "elapsed": 35,
+        "trackId": "3fb79a6618701bfb67b9e2fdec54a224",
+        "data": {
+            "uid": 10001,
+            "nickName": "18600249476",
+            "headimgurl": null,
+            "utoken": "127011-8368-ddfb0382-d8e1-4216-b3e9-6f25aa930302",
+            "ctime": 1512041913265,
+            "certYn": "N"
+        }
+    }
+  ```

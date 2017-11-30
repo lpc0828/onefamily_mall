@@ -1,30 +1,28 @@
-package com.onefamily.ucenter.model;
+package com.onefamily.ucenter.pojo;
 
 import com.onefamily.common.enums.SexEnum;
 import com.onefamily.common.enums.UserStateEnum;
 import com.onefamily.common.enums.YesNoEnum;
-import com.onefamily.platform.sqls.mapping.annotations.Column;
-import com.onefamily.platform.sqls.mapping.annotations.Table;
 
 import java.io.Serializable;
 import java.util.Date;
 
-@Table(name = "t_user")
-public class User implements Serializable {
 
-    @Column(sequence = "seq_t_user_id", isPrimaryKey = true)
+public class UserDto implements Serializable {
+
+    private static final long serialVersionUID = -8240651573352127728L;
+
     private Long id;
     private String nickName;
     private String headimgurl;
-    private Integer sex = SexEnum.UNKNOWN.getValue();
+    private String sex = SexEnum.UNKNOWN.getCode();
     private String mobile;
-    private Integer certificationYn = YesNoEnum.NO.getCode();
+    private String certificationYn = YesNoEnum.NO.getValue();
     private String cardNo;
     private String realName;
     private String unionid;
-    private Integer status = UserStateEnum.NORMAL.getValue();
-    private String appToken;
-    private String wxToken;
+    private String status = UserStateEnum.NORMAL.getCode();
+    private String utoken;
     private Date createdDate;
     private Date modiDate;
     private String comments;
@@ -53,11 +51,11 @@ public class User implements Serializable {
         this.headimgurl = headimgurl;
     }
 
-    public Integer getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
@@ -69,11 +67,11 @@ public class User implements Serializable {
         this.mobile = mobile;
     }
 
-    public Integer getCertificationYn() {
+    public String getCertificationYn() {
         return certificationYn;
     }
 
-    public void setCertificationYn(Integer certificationYn) {
+    public void setCertificationYn(String certificationYn) {
         this.certificationYn = certificationYn;
     }
 
@@ -101,28 +99,20 @@ public class User implements Serializable {
         this.unionid = unionid;
     }
 
-    public Integer getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public String getAppToken() {
-        return appToken;
+    public String getUtoken() {
+        return utoken;
     }
 
-    public void setAppToken(String appToken) {
-        this.appToken = appToken;
-    }
-
-    public String getWxToken() {
-        return wxToken;
-    }
-
-    public void setWxToken(String wxToken) {
-        this.wxToken = wxToken;
+    public void setUtoken(String utoken) {
+        this.utoken = utoken;
     }
 
     public Date getCreatedDate() {
