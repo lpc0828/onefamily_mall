@@ -35,4 +35,11 @@ public class UserDaoImpl extends BaseDaoImpl implements IUserDao {
         query.eq("unionid", unionid);
         return query.singleResult();
     }
+
+    @Override
+    public User queryByPK(Long id) throws SQLException {
+        Query query = new Query(User.class);
+        query.eq("id", id);
+        return query.singleResult();
+    }
 }

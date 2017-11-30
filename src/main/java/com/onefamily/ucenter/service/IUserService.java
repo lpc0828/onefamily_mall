@@ -14,4 +14,6 @@ public interface IUserService {
     ResultVO<User> queryByMobile(String mobile);
 
     ResultVO<User> queryByUnionid(String unionid);
+
+    ResultVO<User> auth(String uid, String platform, String utoken);
 }

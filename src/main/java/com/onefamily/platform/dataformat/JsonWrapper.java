@@ -115,6 +115,7 @@ public class JsonWrapper<T> {
     public static enum StatusEnum {
         Success(0, "全部成功"),
         Fail(41, "处理失败"),
+        AuthFail(403, "鉴权失败"),
         UnknowError(99, "未知错误");
 
         private int code;

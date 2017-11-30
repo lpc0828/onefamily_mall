@@ -11,4 +11,6 @@ public interface IUserDao {
     User queryByMobile(String mobile) throws SQLException;
 
     User queryByUnionid(String unionid) throws SQLException;
+
+    User queryByPK(Long id) throws SQLException;
 }
